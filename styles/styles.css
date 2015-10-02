@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:Arial;
+}
+
+.leftCol {
+    float: left;
+}
+
+.rightCol {
+    float: right;
+}
+
+.cf {
+    clear: both;
+}
+
+p {
+    display: inline-block;
+}
+
+.button {
+    float: right;
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 11px;
+    border-width: 0;
+    border-color: transparent;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button.disabled {
+    background-color: #a9a9a9;
+}
+
+.spendingCategory {
+    display: inline;
+}
+
+.section.heading h2 {
+    color: #fff;
+    background-color: #191970;
+    font-family: arial, sans-serif;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.section.subHeading h3 {
+    color: #fff;
+    background-color: #1e90ff;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.section.heading h2,
+.section .leftCol,
+.section .rightCol {
+    padding: 10px;
+}
+
+.calcContainer {
+
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 600px;
+    margin: 10px auto;
+}
+
+.row {
+    display: table;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.row.odd {
+    background-color: #e8e8e8;
+}
+
+.resultsContainer {
+    border: 1px solid #808080;
+}
+
+.sectionResults h3,
+.resultsContainer {
+    margin: 10px;
+}
+
+.rightCol span {
+    padding-right: 5px;
+}

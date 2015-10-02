@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <script src="scripts/jquery-1.11.3.js"></script>
+    <script src="scripts/cashbackCalculator.js"></script>
+</head>
+<body>
+    <div class="calcContainer">
+        <div class="section heading">
+            <h2>Are you paying for your cash-back rewards?</h2>
+        </div>
+        <div class="section subHeading">
+            <h3>Fill out the form below to find out now.</h3>
+        </div>
+        <div class="section">
+            <div class="leftCol">
+                <p>What was your balance left over from last month?:</p>
+            </div>
+            <div class="rightCol">
+                <span>&#36</span><input type="text" class="textbox" name="startingBalance" id="startingBalance">
+            </div>
+            <div class="cf"></div>
+            <div class="leftCol">
+                <p>How much did you charge this month?</p>
+            </div>
+            <div class="rightCol">
+                <span>&#36</span><input type="text" class="textbox" name="monthlyCharges" id="monthlyCharges">
+            </div>
+            <div class="cf"></div>
+            <div class="categorySelection">
+                <div class="leftCol cashbackGroup">
+                    <p>Choose a spending category</p>
+                    <select class="spendingCategory" name="spendingCategory1" id="spendingCategory1">
+                        <option>Spending Category 1</option>
+                    </select>
+                </div>
+                <div class="rightCol">
+                    <span>&#36</span><input type="text" class="textbox cashbackSpending" name="spendingCategoryAmt1" id="spendingCategoryAmt1">
+                </div>
+                <div class="cf"></div>
+                <div class="leftCol">
+                    <p>What was your &#37 Cash Back?</p>
+                </div>
+                <div class="rightCol">
+                    <span>&#37</span><input type="text" class="textbox cashbackPercentage" name="cashbackAmt1" id="cashbackAmt1">
+                </div>
+            </div>
+            <div class="cf"></div>
+            <button class="button" id="addCategory">Add Category</button>
+            <div class="cf"></div>
+            <div class="leftCol cashbackGroup">
+                <p>What did you spend on everything else?</p>
+            </div>
+            <div class="rightCol">
+                <span>&#36</span><input type="text" class="textbox" name="amtSpentOther" id="amtSpentOther">
+            </div>
+            <div class="cf"></div>
+            <div class="leftCol">
+                <p>What was your &#37 Cash Back?</p>
+            </div>
+            <div class="rightCol">
+                <span>&#37</span><input type="text" class="textbox" name="cashbackAmtOther" id="cashbackAmtOther">
+            </div>
+
+            <div class="cf"></div>
+            <div class="leftCol">
+                <p>How much did you payoff?</p>
+            </div>
+            <div class="rightCol">
+                <span>&#36</span><input type="text" class="textbox" name="amtPaid" id="amtPaid">
+            </div>
+            <div class="cf"></div>
+            <div class="leftCol">
+                <p>Interest rate on credit card</p>
+            </div>
+            <div class="rightCol">
+                <span>&#37</span><input type="text" class="textbox" name="interestRate" id="interestRate">
+            </div>
+            <div class="cf"></div>
+            <button class="button" id="calculate">Calculate</button>
+            <div class="cf"></div>
+        </div>
+        <div class="sectionResults">
+            <h3>Results</h3>
+        </div>
+        <div class="resultsContainer">
+            <div class="row odd">
+                <div class="leftCol">
+                    <span>Monthly Balance</span>
+                </div>
+                <div class="rightCol">
+                    <span class="monthlyBalance"></span>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="row">
+                <div class="leftCol">
+                    <span>How much will you pay in interest?</span>
+                </div>
+                <div class="rightCol">
+                    <span class="interestPaid"></span>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="row odd">
+                <div class="leftCol">
+                    <span>Cash back earned this month</span>
+                </div>
+                <div class="rightCol">
+                    <span class="monthlyCashback"></span>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="row">
+                <div class="leftCol">
+                    <span>How much &#36 did you gain / lose?</span>
+                </div>
+                <div class="rightCol">
+                    <span class="netResult"></span>
+                </div>
+            </div>
+            <div class="cf"></div>
+            <div class="row odd">
+                <div class="leftCol">
+                    <span>Did you pay for your rewards?</span>
+                </div>
+                <div class="rightCol">
+                    <span class="paidForRewards"></span>
+                </div>
+            </div>
+            <div class="cf"></div>
+        </div>
+    </div>
+</body>
+</html>
